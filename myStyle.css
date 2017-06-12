@@ -1,0 +1,164 @@
+body{
+	background-color: lightblue;
+	background-image: url('bkImg.jpg');
+	background-size: cover;	
+}
+
+.heading{
+	font-family: Josefin Slab;
+	color: black;
+	margin-top: 50px;
+	text-align: center;
+}
+
+img {
+    margin-left: 15%;
+	margin-top: 20px;
+}
+
+.btncontent{
+	font-family: Josefin Slab;
+	font-size: 21px;
+	color: black;	
+	border: 1px solid black;
+    border-radius: 4px;
+	margin-top:30px;
+	width: 100px;
+}
+
+.disp_err{
+	display: inline
+	font-family: Josefin Slab;
+	font-size: 17px;
+	color: red;
+	width: 100%;
+}
+
+.disp_res{
+	font-family: Josefin Slab;
+	color: green;
+	text-align: center;
+	font-size: 23px;
+	margin-top: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: darkGray;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.customLabel{
+	margin-left: 20px;
+}
+
+.keypadStyle{
+	margin-top: 25px;
+	font-family: Josefin Slab;
+}
+
+input[type=button] {
+  background: lightGray;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 7px;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+input[type=button]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+input[type=button]:hover {
+  background-color: #003300;
+  color: white;
+}
+
+#keypad{
+  position: relative;
+  width: 400px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 0px auto;
+  padding: 20px 20px 100px 20px;
+}
+
+#divstyle{
+  width: 550px; 
+  border: 1px solid black;
+  background-color: #f8d887;
+  margin-left: auto ;
+  margin-right: auto ;
+  -webkit-animation: background 6s cubic-bezier(1,0,0,1) infinite;
+  animation: background 6s cubic-bezier(1,0,0,1) infinite;  
+}
+
+@-webkit-keyframes background {  
+  50% { background-color: #f99;}  
+  75% { background-color: #ffb3b3;}  
+  100% { background-color: #f8d887;}
+}
+
+input[type=text]{
+    width: 390px;
+	height: 55px;  
+    padding: 12px 20px;	
+	font-size: 22px;
+	font-family: Josefin Slab;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+	background-color: #DCDCDC;
+}

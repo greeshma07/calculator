@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="myStyle.css">
+  <script src="myScript.js" type="text/javascript"></script>  
+</head>
+
+<body>
+	<h1 class="heading">Calculator</h1>	
+	<div id ="divstyle">
+	<p><img src="warning.png" alt="warningImage" width="20px" height="22px" id="pic"></img>
+		<span id="equation_err" class="disp_err"></span></p>
+	<table style="margin-top: 40px;" align="center">
+		<tr>			
+			<td><input type="text" id="equation" value=""></input></td>
+		</tr>
+		<tr>
+			<td><button class="btncontent" onclick="calculate()" style="margin-left:75px;">Calculate</button>
+			<button class="btncontent" onclick="clearFunction()" style="margin-left:40px;">Reset</button></td>
+		</tr>			
+	</table>
+	<table align="center" class="keypadStyle">
+	<tr>
+		<td><h4>Keypad</h4></td>	
+		<td><label class="switch customLabel">
+			<input type="checkbox" id="toggle-event">
+			<div class="slider round"></div>
+	</label></td></tr></table></br>
+	<div id="keypad" style="background-color: #76d7c4;">
+            <input type="button" value=" C " onclick="clearFunction()" />
+			<input type="button" value=" Del " onclick="deleteVal()" />
+			</br>
+            <input type="button" value=" 1 " onclick="addVal('1')" />
+            <input type="button" value=" 2 " onclick="addVal('2')" />
+            <input type="button" value=" 3 " onclick="addVal('3')" />
+            <input type="button" value=" + " onclick="addVal('+')" />
+            </br>
+            
+            <input type="button" value=" 4 " onclick="addVal('4')" />
+            <input type="button" value=" 5 " onclick="addVal('5')" />
+            <input type="button" value=" 6 " onclick="addVal('6')" />
+            <input type="button" value=" - " onclick="addVal('-')" />
+            </br>
+          
+            <input type="button" value=" 7 " onclick="addVal('7')" />
+            <input type="button" value=" 8 " onclick="addVal('8')" />
+            <input type="button" value=" 9 " onclick="addVal('9')" />
+            <input type="button" value=" x " onclick="addVal('*')" />
+            </br>
+        
+            <input type="button" value=" 0 " onclick="addVal('0')" />
+			<input type="button" value=" . " onclick="addVal('.')" />
+            <input type="button" value=" = " onclick="calculate()" />
+            <input type="button" value=" / " onclick="addVal('/')" />
+            </br>
+	</div></br></div>
+</body>
+
+</html>
+   
